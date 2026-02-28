@@ -1,0 +1,47 @@
+PrivacyLab Pipeline - Visual Flow Diagram
+
+╔══════════════════════════════════════════════════════════════╗
+║                    PRIVACYLAB PIPELINE                       ║
+╠══════════════════════════════════════════════════════════════╣
+║ User initiates VM install                                     ║
+║        │                                                      ║
+║        ▼                                                      ║
+║  Download & run installer                                     ║
+║        │                                                      ║
+║        ▼                                                      ║
+║   VirtualBox / VM setup                                       ║
+║        │                                                      ║
+║        ▼                                                      ║
+║  Hardened VM created                                          ║
+║        │                                                      ║
+║        ▼                                                      ║
+║   Snapshot CleanState taken                                   ║
+║        │                                                      ║
+║        ▼                                                      ║
+║      1-Click Start                                            ║
+║        │                                                      ║
+║        ▼                                                      ║
+║    User works in VM                                           ║
+║        │                                                      ║
+║        ▼                                                      ║
+║    Finished session?                                          ║
+║        │                                                      ║
+║        ▼                                                      ║
+║ Snapshot Restore → Back to clean VM                           ║
+╚══════════════════════════════════════════════════════════════╝
+
+Simplified Flow:
+User → Installer → VM Setup → Snapshot CleanState → Start VM → Work → Reset VM → Repeat
+
+Key Points:
+- Each session starts from a clean snapshot
+- No data persists between sessions
+- Full isolation from host system
+- One-click reset functionality
+
+Security Layers:
+1. Host OS isolation
+2. VirtualBox hypervisor
+3. VM hardening (no shared resources)
+4. Tails OS amnesic design
+5. Snapshot reset mechanism
