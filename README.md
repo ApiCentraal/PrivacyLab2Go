@@ -1,10 +1,10 @@
-# PrivacyLab Pay & Go - Disposable Research VM
+# PrivacyLab2Go - Disposable Research VM
 
 **Veilig experimenteren, zero setup, één klik opstarten, elke sessie schoon.**
 
 ---
 
-## 🎯 Wat is PrivacyLab?
+## 🎯 Wat is PrivacyLab2Go?
 
 PrivacyLab is een **geïsoleerde, disposable VM** die speciaal is ontworpen voor veilig onderzoek en experimenteren. Alles draait in een volledig gesandboxde omgeving die na elke sessie wordt gereset naar een schone staat.
 
@@ -21,7 +21,7 @@ PrivacyLab is een **geïsoleerde, disposable VM** die speciaal is ontworpen voor
 ## 📦 Productinhoud
 
 ```
-PrivacyLab-PayAndGo.zip
+PrivacyLab2Go.zip
 ├── README.md                  # Deze handleiding
 ├── privacylab-install.sh       # Install script Linux/macOS
 ├── privacylab-install.ps1      # Install script Windows
